@@ -4,7 +4,7 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
+  --color-pink: #ffcdd2;
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -13,6 +13,8 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-light-green: #b2dfdb;
+  --color-green: #4f9a94;
 
   /* Font size */
   --font-large: 48px;
@@ -39,6 +41,26 @@ body {
   margin: 0;
   font-family: "PT Sans", sans-seri;
   cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+  margin: 0 10px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 /* Typography : 패딩,텍스트,마진 등에 대해서 스타일링 하는 것*/
@@ -74,7 +96,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: var(--color-light-green);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -100,17 +122,6 @@ p {
   color: var(--color-light-grey);
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-white);
-  margin: 0 10px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
 .navbar__logo {
   display: flex;
   font-size: var(--font-medium);
@@ -121,4 +132,49 @@ ul {
 .navbar__logo img {
   width: 30px;
   height: 30px;
+}
+
+/* Home */
+#home {
+  background: center/cover no-repeat url(imgs/home-bg-green.png);
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.home__txt {
+  margin-left: 300px;
+}
+
+.home__img {
+  margin-right: 400px;
+}
+
+.home__title {
+  margin: 0;
+}
+
+#home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title {
+  color: var(--color-white);
+}
+.home__description {
+  color: var(--color-green);
+  font-weight: var(--weight-semi-bold);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--weight-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
