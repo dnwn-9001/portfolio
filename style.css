@@ -101,10 +101,18 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-light-green);
+  /* background-color: var(--color-light-green); */
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  position: fixed;
+  width: 100%;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-light-green);
 }
 
 .navbar__menu {
@@ -154,6 +162,7 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 40px;
+  padding-top: 130px;
 }
 
 .home__txt {
