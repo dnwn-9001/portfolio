@@ -157,7 +157,7 @@ p {
 }
 
 .home__txt {
-  margin-left: 300px;
+  margin-left: 400px;
 }
 
 .home__img {
@@ -166,11 +166,12 @@ p {
 
 .home__title {
   margin: 0;
+  font-size: 55px;
 }
 
 #home__avatar {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
 }
@@ -249,6 +250,7 @@ p {
 .jobs {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .job__description {
