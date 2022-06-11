@@ -25,6 +25,17 @@ navbarMenu.addEventListener("click", (event) => {
     return;
   }
 
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  scrollIntoView(link);
 });
+
+// Contact Me 버튼 누르면 Let's talk로 이동
+// Handle click on "contact me" button on home
+const contactMe = document.querySelector(".home__contact");
+contactMe.addEventListener("click", () => {
+  scrollIntoView("#contact");
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}

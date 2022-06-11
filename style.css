@@ -202,6 +202,12 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.home__contact:hover {
+  color: var(--color-green);
+  border: 2px solid var(--color-green);
 }
 
 /* Section common */
