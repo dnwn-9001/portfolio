@@ -25,8 +25,15 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
+});
+
+//navbar toggle 버튼 클릭시 navbar 메뉴 보여지게 하기.
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", (e) => {
+  navbarMenu.classList.toggle("open");
 });
 
 // Contact Me 버튼 누르면 Let's talk로 이동

@@ -101,11 +101,10 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  /* background-color: var(--color-light-green); */
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 5px;
+  padding: 15px;
   position: fixed;
   width: 100%;
   transition: all var(--animation-duration) ease-in-out;
@@ -499,6 +498,11 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-light-green);
+  }
+
+  #navbar.navbar--dark {
+    padding: 15px;
   }
 
   .navbar__menu {
@@ -506,6 +510,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
@@ -520,7 +528,7 @@ p {
     flex-direction: column;
   }
 
-  #home {
+  .home__container {
     flex-direction: column;
     text-align: center;
   }
