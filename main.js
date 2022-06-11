@@ -44,6 +44,24 @@ document.addEventListener("scroll", () => {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+//아래로 스크롤링 될때 arrow 버튼이 보여지고, arrow 버튼을 누르면 home으로 이동.
+//Show "arrow up" button when scrolling down
+const arrow = document.querySelector("#arrow");
+const arrowBtn = document.querySelector(".arrow__btn");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight * 0.5) {
+    arrow.classList.add("visible");
+  } else {
+    arrow.classList.remove("visible");
+  }
+});
+
+//Handle click on the "arrow up" button
+arrowBtn.addEventListener("click", () => {
+  scrollIntoView("#home");
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: "smooth" });
