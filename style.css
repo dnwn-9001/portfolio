@@ -377,6 +377,13 @@ p {
   /* 한 줄에 들어가지 않으면 다음 줄로 자동으로 배치 */
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -384,6 +391,10 @@ p {
   height: 250px;
   margin: 2px;
   position: relative;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
