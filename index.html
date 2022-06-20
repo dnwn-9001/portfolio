@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youngin's Portfolio</title>
+    <title>Joan's Portfolio</title>
     <meta name="description" content="Portfolio Website" />
-    <meta name="author" content="Youngin Chang" />
+    <meta name="author" content="Joan" />
     <link rel="icon" type="image/png" href="imgs/logo1.png" />
     <script
       src="https://kit.fontawesome.com/484423f8e0.js"
@@ -71,8 +71,8 @@
         안녕하세요. 웹 개발자 장영인 입니다. 저는 웹을 기반으로 한 ERP시스템과
         경영정보시스템을 개발하는 크리스피드에서 2020.11~2021.09까지 총 11개월간
         근무했습니다. 경영정보시스템의 여러 모듈 중 예산 프로그램을 담당하여
-        개발을 진행하였으며, 사용한 언어/툴은 JAVA, JavaScript/Nexacro, Toad for
-        Oracle 입니다. 저는 풀스택 개발자로 성장하기위해
+        개발을 진행하였으며, 사용한 언어/툴은 JAVA, JavaScript/eclipse, Nexacro,
+        Toad for Oracle 입니다. 저는 풀스택 개발자로 성장하기위해
         HTML,CSS,JavaScript,React,Node.js 등을 공부하고 있습니다.
       </p>
       <div class="about__majors">
@@ -119,16 +119,23 @@
     <section id="skills" class="section">
       <div class="section__container">
         <h1>Skills</h1>
-        <h3>제가 가진 스킬들을 소개합니다.</h3>
+        <h3>제가 공부하고있는 기술들을 소개합니다.</h3>
         <div class="skills">
-          <i class="fa-brands fa-js-square fa-8x"></i>
-          <i class="fa-brands fa-html5 fa-8x"></i>
-          <i class="fa-brands fa-css3 fa-8x"></i>
-          <i class="fa-brands fa-react fa-8x"></i>
-          <i class="fa-brands fa-node fa-8x"></i>
-          <i class="fa-brands fa-python fa-8x"></i>
+          <i class="fa-brands fa-js-square fa-8x" data-filter="js"></i>
+          <i class="fa-brands fa-html5 fa-8x" data-filter="html"></i>
+          <i class="fa-brands fa-css3 fa-8x" data-filter="css"></i>
+          <i class="fa-brands fa-react fa-8x" data-filter="react"></i>
+          <i class="fa-brands fa-node fa-8x" data-filter="node"></i>
+          <i class="fa-brands fa-python fa-8x" data-filter="python"></i>
         </div>
-        <div class="skills__description"><h3>description</h3></div>
+        <div class="skills__description">
+          <h3 class="skills__description__dtl" data-type="js">JavaScript</h3>
+          <h3 class="skills__description__dtl" data-type="html">Html5</h3>
+          <h3 class="skills__description__dtl" data-type="css">CSS</h3>
+          <h3 class="skills__description__dtl" data-type="react">React</h3>
+          <h3 class="skills__description__dtl" data-type="node">Node.js</h3>
+          <h3 class="skills__description__dtl" data-type="python">Python</h3>
+        </div>
       </div>
     </section>
     <!-- Work -->
