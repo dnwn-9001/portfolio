@@ -461,6 +461,7 @@ p {
 /* Contact */
 #contact {
   background-color: #005662;
+  height: 450px;
 }
 
 .contact__title,
