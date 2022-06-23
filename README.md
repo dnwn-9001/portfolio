@@ -34,4 +34,7 @@ javascript를 통해 동적인 기능을 구현한다.
 ![image](https://user-images.githubusercontent.com/106906742/175268020-cef9986d-e30f-418d-bca9-9561a87dd3ab.png)
 
 
+### :cd:Lecture:cd:
+Dream Coding
+
 </div>
