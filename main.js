@@ -160,6 +160,7 @@ function scrollIntoView(selector) {
 const observerCallback = (entries, observer) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+      console.log(entry.target.id);
       const index = sectionIds.indexOf(`#${entry.target.id}`);
       // 스크롤링이 아래로 되어서 페이지가 올라옴
       if (entry.boundingClientRect.y < 0) {
@@ -178,10 +179,11 @@ window.addEventListener("wheel", () => {
   if (window.scrollY === 0) {
     selectedNavIndex = 0;
   } else if (
-    window.scrollY + window.innerHeight ===
+    // 맨아래로 내려갔을 때 메뉴바의'Contact'가 활성화되지않아 개발자도구를보니
+    // window.scrollY에 소수점이 있어 아래 조건이 맞지 않아 Math.floor()를 사용해 정수처리 함.
+    Math.floor(window.scrollY) + window.innerHeight ===
     document.body.clientHeight
   ) {
-    console.log("맨아래");
     selectedNavIndex = navItems.length - 1;
   }
   selectNavItem(navItems[selectedNavIndex]);

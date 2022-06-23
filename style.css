@@ -355,6 +355,7 @@ p {
 .work__categories {
   display: flex;
   justify-content: center;
+  margin: 16px 0;
 }
 
 .category__btn {
@@ -399,6 +400,7 @@ p {
   justify-content: center;
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
+  margin: 16px 0;
 }
 
 .work__projects.anim-out {
