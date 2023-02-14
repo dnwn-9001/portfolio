@@ -19,21 +19,6 @@ javascript를 통해 동적인 기능을 구현한다.
 
 
 
-### :heavy_check_mark: Advanced Feature :heavy_check_mark:
-
-1.Wep API인 Element.getBoundingClientRect()를 이용한 스크롤다운시 네비게이션바 투명화 기능.
-
-![image](https://user-images.githubusercontent.com/106906742/175270655-5bd8520f-5263-4a48-8f46-0cd654aefafa.png)
-
-2.스크롤로 섹션 이동시 Wep API인 Intersection Observer API를 이용해 섹션 아이디를 찾고 해당하는 네비 메뉴를 활성화해주는 기능.
-
-![image](https://user-images.githubusercontent.com/106906742/175267523-1e461ed8-8339-4487-a7fe-53b11c84273e.png)
-
-3.미디어쿼리를 이용한 반응형 웹페이지 구현.
-
-![image](https://user-images.githubusercontent.com/106906742/175268020-cef9986d-e30f-418d-bca9-9561a87dd3ab.png)
-
-
 ### :cd:Lecture:cd:
 Dream Coding
 
